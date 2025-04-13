@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Power Man</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicom.png" type="image/x-icon">
+</head>
+<body>
+    <!--Inicio header-->
+    <header>
+
+        <img id="logo" src="assets/logo.png" alt="Logo barbearia">
+
+        <nav>
+            <a href="#serviços">Serviços</a>
+            <a href="#agende">Agende</a>
+            <a href="#sobre-nos">Sobre-nós</a>
+            <a href="#contato">Fale-conosco</a>
+        </nav>
+
+        <div class="redes-sociais">
+
+            <a id="wpp" href="https://wa.me/5544997242373" target="_blank" rel="externos"><img class="redes" src="assets/whatsapp.png" alt="whatsapp logo"></a>
+
+            <a id="insta" href="https://www.instagram.com/barbeariapowerman/" target="_blank" rel="externos"><img class="redes" src="assets/instagram.png" alt="instagram logo"></a>
+
+        </div>
+
+    </header>
+    <!--Fim header-->
+
+    <!--Começo main-->
+
+    <main>
+        <div class="land">
+            <div class="titulos">
+                <h1 id="power">&nbsp;&nbsp;&nbsp;POWER MAN</h1>
+                <a  id="agende" href="#">AGENDE SEU HORÁRIO!</a>
+            </div>
+        </div>
+
+        <h2 class="entre" id="serviços">Serviços</h2>
+
+        <div class="barba reveal">
+            <h2 id="barba-dentro">BARBA</h2>
+        </div>
+
+        <div class="cabelo reveal">
+            <h2 id="cabelo-dentro">CABELO</h2>
+        </div>
+
+        <div id="sobre-nos" class="quem-somos">
+
+            <img src="assets/carlinho.png" alt="Quem Somos">
+
+            <div class="texto-quem">
+
+                <h1><span class="destaque">QUEM</span>SOMOS</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis voluptatibus dolorum, similique deserunt mollitia quod itaque dolorem modi eaque aliquid recusandae, explicabo maxime quas ex. Ad earum suscipit ab!
+                </p>
+            </div>
+        </div>
+
+        <div class="fim ">
+
+            <img id="lado-rolo" src="assets/lado-rolo.jpg" alt="">
+
+            <img id="rolo" src="assets/rolo.jpg" alt="">
+
+            <div class="inf">
+
+                <h1>NOSSA UNIDADE</h1>
+
+                <h2>Avenida Pedro Taques, 1013, Maringá-PR</h2><br>
+
+                <h3>Horários de Funcionamento:</h3><br>
+
+                <p>Segunda a Sexta: 09h às 19hr <br>
+                    Sábado: 09h às 18hr <br>
+                    Domingo: fechado
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!--Fim main-->
+
+
+    <!--Começo Section-->
+
+    <section class="feedback">
+
+        <h2 class="avalie">Deixe sua Avalição</h2>
+
+           
+                <form action="#" method="post">
+                    <div class="nome">
+                        <label for="inome">Digite seu nome:</label>
+                        <input type="text" placeholder="Digite seu nome aqui...">
+                    </div>
+                    <div class="range-nota">
+                        <label for="inota">Avalie o Site:</label>
+                        <input type="range" name="nota" id="inota" min="0" max="10" step="1" oninput="notaValue.innerText = this.value">
+                        <span id="notaValue">0</span>/10
+                    </div>
+                    <div class="comentario">
+                        <label for="icoment">Deixe seu comentário aqui:</label>
+                        <textarea name="comentario" id="icoment" placeholder="Comente aqui..."></textarea>
+                    </div>
+                    <button class="enviar" type="submit">Enviar</button>
+            
+                
+            </form>
+    </section>
+
+    <!--Fim Section-->
+
+
+    <!--Começo footer-->    
+
+    <footer>
+            <div id="contato" class="footer-caixa">
+
+                <div class="textorp">
+
+                    <p>ENDEREÇO: AV. PEDRO TAQUES, 1013, MARINGÁ-PR</p>
+
+                    <p>CONTATO: (44)99724-2373</p>
+
+                    <p>Funcionamento: SEG A SEX: 09H-19H | SÁB: 09H-18H</p>
+
+                </div>
+
+                <div class="redesrp">
+
+                    <img src="assets/whatsapp.png" alt="Logo whatsapp">
+
+                    <img src="assets/instagram.png" alt="Logo instagram">
+
+                </div>
+
+                <p class="creditos">
+
+                    DESENVOLVIDO POR LUÍS F. MESSIAS © 2025
+                </p>
+            </div>
+    </footer>
+
+        <!--Fim footer-->
+
+        <script>
+            const reveals = document.querySelectorAll('.reveal');
+        
+            window.addEventListener('scroll', () => {
+                for (let i = 0; i < reveals.length; i++) {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = reveals[i].getBoundingClientRect().top;
+                    const revealPoint = 150;
+        
+                    if (elementTop < windowHeight - revealPoint) {
+                        reveals[i].classList.add('active');
+                    } else {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            });
+        </script>
+
+</body>
+</html>

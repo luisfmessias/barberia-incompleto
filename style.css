@@ -1,0 +1,517 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+:root{
+    --cor0: #D9BEB4;
+    --cor1: #D98F4E;
+    --cor2: #4b3426;
+    --cor3: #402110;
+    --cor4: #0D0D0D;
+}
+
+
+body{
+    font-family: "Inika", serif;
+    background-color: #24150bda;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+}
+
+
+#logo{
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 80px;
+    height: 80px;
+    filter: brightness(0) invert(1);
+}
+
+
+#logo:hover{
+    transform: scale(1.1);
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+
+nav a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+nav a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: rgb(189, 186, 186);
+}
+
+
+.redes-sociais{
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+    filter: brightness(0) invert(1);
+}
+
+
+#wpp:hover{
+    transform: scale(1.1);
+}
+
+
+#insta:hover{
+    transform: scale(1.1);
+
+}
+
+
+.redes{
+    padding-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    nav {
+
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+
+    .redes-sociais {
+        margin-top: 10px;
+    }
+
+
+    .redes {
+        padding-right: 0;
+    }
+}
+
+.land{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.400);
+}
+
+
+.land::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(assets/incio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(40%);
+    z-index: -1;
+}
+
+
+.titulos{
+    font-family: "Instrument Serif", serif;
+    letter-spacing: 3px;
+    display:block;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#power{
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+#agende{
+    text-decoration: underline;
+    color: white;
+    padding-left: 30px;
+    font-size: 1.3em;
+    transition: 0.4s;
+}
+
+#agende:hover{
+    display: inline-block;
+    color: rgb(177, 173, 173);
+    transform: scale(1.1);
+}
+
+.entre{
+    text-align: center;
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+
+.barba{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.400);
+}
+
+
+.barba::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(assets/barba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(40%);
+    z-index: -1;
+}
+
+#barba-dentro{
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-size: 70px;
+    position: absolute;
+    top: 45%;
+    left: 70px;
+}
+
+#barba-dentro:hover{
+    transform: scale(1.1);
+}
+
+.cabelo{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.400);
+}
+
+
+.cabelo::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(assets/cabelo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(40%);
+    z-index: -1;
+}
+
+#cabelo-dentro{
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    font-size: 70px;
+}
+
+#cabelo-dentro:hover{
+    transform: scale(1.1);
+}
+
+
+.quem-somos{
+    display: flex;
+    align-items: center;
+    background-color: #d3d3d3;
+    width: 100%;
+    gap: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.589);
+}
+
+.quem-somos img{
+    filter: opacity(70%);
+    padding-top: 20px;
+    padding-left: 8%;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.texto-quem h1{
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.destaque{
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+
+.texto-quem p{
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.fim{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+
+.fim img{
+    filter: opacity(40%);
+    width: 50%;
+    height: 500px;
+    object-fit: cover
+}
+
+
+.inf{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    word-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.inf h1 {
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.inf h2,h3{
+    font-weight: 100;
+}
+
+
+.fim p{
+    font-size: 1.35em;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-caixa{
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.589);
+}
+
+.textorp{
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+.redesrp{
+    margin: 10px 0;
+}
+
+
+.redesrp img{
+    filter: brightness(0) invert(1);
+    width: 25px;
+    margin: 0 10px;
+}
+
+.redesrp img:hover{
+    transform: scale(1.2);
+}
+
+.creditos{
+    font-size: 12px;
+    margin-top: 10px;
+    color: white;
+}
+
+.footer-caixa p{
+    padding-bottom: 12px;
+}
+
+
+form label{
+    display: block;
+}
+
+
+.feedback{
+    background-color: #d3d3d3;
+    text-align: center;
+    height: 500px;
+    font-family: "Instrument Serif", serif;
+}
+
+
+.feedback h2{
+    font-weight: 100;
+}
+
+.avalie{
+    font-size: 2em;
+    padding-top: 28px;
+    text-decoration: underline;
+}
+
+
+.nome{
+    padding-top: 28px;
+    font-size: 1.5em;
+}
+
+.nome input{
+    padding: 10px;
+    width: 25%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.534);
+
+}
+
+.nome input:hover{
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.534);
+}
+
+.range-nota{
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+
+.range-nota input{
+    color: black;
+    -webkit-appearance: none;
+    border-radius: 20%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.comentario{
+    padding-top: 18px;
+    font-size: 1.5em;
+}
+
+.comentario textarea{
+    width: 300px;
+    height: 100px;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.233);
+    outline: none;
+}
+
+.comentario label{
+    padding-bottom: 10px;
+}
+
+.enviar{
+    margin-top: 18px;
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.76);
+
+}
+
+.enviar:hover{
+    cursor: pointer;
+    background-color: #b6b6b6;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.76);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.4s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
