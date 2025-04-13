@@ -56,10 +56,12 @@ header{
 
 nav{
     display: flex;
-    gap: 20px;
-    align-self: flex-end;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-family: "Instrument Serif", serif;
     text-transform: uppercase;
+    font-size: 1.3em;
 }
 
 
@@ -116,19 +118,14 @@ nav a:hover{
 
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        margin-top: 10px;
+        text-align: center;
+        padding: 20px;
     }
-
 
     .redes-sociais {
-        margin-top: 10px;
+       margin: auto;
     }
 
-
-    .redes {
-        padding-right: 0;
-    }
 }
 
 .land{
@@ -152,36 +149,35 @@ nav a:hover{
 }
 
 
-.titulos{
+#power{
     font-family: "Instrument Serif", serif;
-    letter-spacing: 3px;
-    display:block;
-    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-
-#power{
-    padding-bottom: 10px;
     letter-spacing: 5px;
     font-weight: 100;
     font-size: 40px;
+    color: white;
+    white-space: nowrap;
+
 }
 
 #agende{
+    font-family: "Instrument Serif", serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,100%);
     text-decoration: underline;
     color: white;
-    padding-left: 30px;
     font-size: 1.3em;
-    transition: 0.4s;
+    padding-left: 36px;
+    white-space: nowrap;
 }
 
 #agende:hover{
-    display: inline-block;
-    color: rgb(177, 173, 173);
-    transform: scale(1.1);
+    color: rgb(170, 170, 170);
 }
 
 .entre{
@@ -236,7 +232,6 @@ nav a:hover{
     width: 100%;
     overflow: hidden;
     margin-top: 10px;
-    margin-bottom: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.400);
 }
 
@@ -257,10 +252,10 @@ nav a:hover{
     color: white;
     font-family: "Instrument Serif", serif;
     font-weight: 100;
+    font-size: 70px;
     position: absolute;
     top: 45%;
-    left: 70%;
-    font-size: 70px;
+    left: 70px;
 }
 
 #cabelo-dentro:hover{
@@ -269,21 +264,27 @@ nav a:hover{
 
 
 .quem-somos{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    padding: 60px 20px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    background-color: #d3d3d3;
-    width: 100%;
-    gap: 30px;
-    padding-bottom: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.589);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#carlinhos{
+    border-radius: 30% 30% 10% 10%;
+    box-shadow: 5px 5px 8000px white;
 }
 
 .quem-somos img{
     filter: opacity(70%);
-    padding-top: 20px;
-    padding-left: 8%;
     width: 500px;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -293,14 +294,9 @@ nav a:hover{
     font-size: 40px;
     font-weight: 500;
     margin: 0;
+    color: white;
+    word-spacing: 10;
 }
-
-.destaque{
-    font-family: "Instrument Serif", serif;
-    font-weight: 100;
-    letter-spacing: 5px;
-}
-
 
 .texto-quem p{
     text-align: justify;
@@ -308,6 +304,7 @@ nav a:hover{
     font-size: 16px;
     line-height: 1.6;
     max-width: 500px;
+    color: white;
 }
 
 .fim{
@@ -316,7 +313,6 @@ nav a:hover{
     width: 100%;
     height: 500px;
     overflow: hidden;
-    margin-top: 8px;
 }
 
 
@@ -414,9 +410,10 @@ form label{
 
 
 .feedback{
-    background-color: #d3d3d3;
+    background-color: #1e1e1e;
+    color: white;
     text-align: center;
-    height: 500px;
+    height: 600px;
     font-family: "Instrument Serif", serif;
 }
 
@@ -426,14 +423,14 @@ form label{
 }
 
 .avalie{
-    font-size: 2em;
-    padding-top: 28px;
+    font-size: 2.2em;
+    padding-top: 40px;
     text-decoration: underline;
 }
 
 
 .nome{
-    padding-top: 28px;
+    padding-top: 40px;
     font-size: 1.5em;
 }
 
@@ -444,15 +441,15 @@ form label{
     border: none;
     outline: none;
     box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.534);
-
+    margin-top: 10px;
 }
 
 .nome input:hover{
-    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .range-nota{
-    padding-top: 20px;
+    padding-top: 50px;
     font-size: 1.5em;
 }
 
@@ -460,6 +457,7 @@ form label{
     color: black;
     -webkit-appearance: none;
     border-radius: 20%;
+    margin-top: 15px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -473,7 +471,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .comentario{
-    padding-top: 18px;
+    padding-top: 40px;
     font-size: 1.5em;
 }
 
@@ -482,26 +480,35 @@ input[type="range"]::-webkit-slider-thumb {
     height: 100px;
     box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.233);
     outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.comentario textarea:hover{
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .comentario label{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .enviar{
-    margin-top: 18px;
-    padding: 8px 30px;
+    background: #C19A6B;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
     border-radius: 20px;
     border: none;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.76);
-
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 7px;
 }
 
 .enviar:hover{
     cursor: pointer;
     background-color: #b6b6b6;
     transform: scale(0.9);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.76);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .reveal {
