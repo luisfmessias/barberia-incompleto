@@ -171,10 +171,10 @@ nav a:hover{
 }
 
 #agende{
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.363);
-    border: 1px solid rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+    border: 1px solid rgba(163, 154, 154, 0.781);
     border-radius: 8px;
-    padding: 0px 3px 3px 3px;
+    padding: 4px;
     font-family: "Instrument Serif", serif;
     position: absolute;
     top: 50%;
